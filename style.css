@@ -51,3 +51,31 @@ body{
 .play-board .head{
     background-color: #60CBFF;
 }
+.control-buttons{
+    display : none;
+    justify-content: space-between;
+}
+.control-buttons i{
+    padding : 25px 0;
+    color :#B8C6DC;
+    width : calc(100% / 4);
+    text-align: center;
+    border-right: 2px solid #171b26;
+    border-radius:5px;
+    
+}
+
+@media screen and (max-width: 800px){
+    .control-buttons{
+        display : flex;
+    }
+
+    .control-buttons i{
+        padding : 15px 0;
+        font-size:1rem;
+    }
+    .container{
+        width:90vmin ;
+        height: 100vmin;
+    }
+}
